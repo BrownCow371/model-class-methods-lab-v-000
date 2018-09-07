@@ -44,4 +44,8 @@ class Boat < ActiveRecord::Base
   def self.longest
     self.maximum("length")
   end
+
+  # def self.longest
+  # order('length DESC').first
+  # end
 end

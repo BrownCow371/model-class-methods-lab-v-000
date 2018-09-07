@@ -10,4 +10,7 @@ class Classification < ActiveRecord::Base
     joins(:boats).where(boats: {length: Boat.longest})
   end
 
+  # def self.longest
+  #   Boat.longest.classifications
+  # end
 end
